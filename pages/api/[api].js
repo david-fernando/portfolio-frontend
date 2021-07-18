@@ -2,8 +2,6 @@
 import axios from 'axios'
 import returnSpecificRepositories from '../../utils/returnSpecificRepositories'
 
-import returnImageFromRepository from '../../utils/returnImageFromRepository'
-
 export default (request, response) => {
 
   const {
@@ -55,9 +53,10 @@ export default (request, response) => {
       let image
 
       for(let index = 0; index < repositoryNames.length; index++){
-        const { imageUrl } = returnImageFromRepository(repositoryNames[index])
 
-        image = await imageUrl()
+        const data = await axios.get(`https://githubcardapi.herokuapp.com/?githubuser=david-fernando&repository=${repositoryNames[index]}`)
+
+        image = data.data.imageUrl
         
         repositorys[index].image = image
       }
