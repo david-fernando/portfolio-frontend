@@ -1,0 +1,31 @@
+.socialLink {
+  height: 0px auto;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 4px;
+  align-items: baseline;
+  background: #fff;
+}
+
+.socialLink > a, .icon-link {
+  color: #383a3c
+}
+
+@media (max-width: 765px) {
+  .socialLink {
+    gap: 1.6rem;
+  }
+  .socialLink > a {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 404px) {
+  .socialLink {
+    gap: 7rem;
+  }
+  .socialLink > a > span {
+    display: none
+  }
+}

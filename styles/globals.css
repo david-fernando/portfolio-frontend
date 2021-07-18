@@ -1,0 +1,77 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 10px
+}
+
+*, p, b, span, div, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  font-size: 1.6rem;
+}
+
+a:hover {
+  color: #5F6368;
+}
+
+.react-multi-carousel-list.container-slider {
+  width: 100%;
+}
+
+.react-multi-carousel-item.slider-card {
+  width: 250px !important;
+  margin-right: 11px;
+}
+
+.icon-link {
+  width: 1.6rem;
+  height: 1.6rem
+}
+
+a:hover .icon-link {
+  color: #5F6368;
+}
+
+.title {
+  font-size: 2.4rem;
+  color: #53565b;
+}
+
+.about {
+  font-size: 1.6rem;
+  color: #53565b;
+  font-weight: bold;
+}
+.description {
+  font-size: 1.6rem;
+  text-align: initial;
+  max-height: 44%;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  overflow: hidden;
+  color: #53565b;
+}
+
+@media (max-width: 404px) {
+  .icon-link {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}

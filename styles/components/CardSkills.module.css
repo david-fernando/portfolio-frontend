@@ -1,0 +1,17 @@
+.cardSkillsContainer {
+  width: 25.0rem;
+  min-height: 25.0rem;
+  margin-top: 1rem;
+  gap: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  background: #fff;
+  border: none;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.cardSkillsContainer > span {
+  font-size: 3.4rem;
+  color: #53565b;
+}

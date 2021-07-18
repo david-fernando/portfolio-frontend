@@ -1,0 +1,32 @@
+.cardContainer {
+  width: 25.0rem;
+  height: 25.0rem;
+  gap: 10rem;
+  align-items: flex-start;
+  text-align: justify;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+}
+
+.cardImage {
+  display: block;
+  width: 100%;
+  min-height: 12.533rem;
+  border-radius: 1rem 1rem 0px 0px;
+  background-position: center;
+  background-size: 24.9rem;
+  background-repeat: no-repeat;
+}
+
+.info {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: baseline;
+  text-align: justify;
+  height: 0px auto;
+  border-radius: 10rem;  
+}

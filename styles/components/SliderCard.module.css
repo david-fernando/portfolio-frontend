@@ -1,0 +1,14 @@
+.sliderContainer {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 0px auto;
+  max-width: 100%;
+}
+
+@media (max-width: 717px) {
+  .sliderContainer {
+    align-items: center;
+  }
+}
