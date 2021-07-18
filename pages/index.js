@@ -25,8 +25,8 @@ export default function Home({ gitData, dataMedium }) {
 
 export async function getStaticProps(){
 
-  const gitData = await axios.get('http://localhost:3000/api/git')
-  const dataMedium = await axios.get('http://localhost:3000/api/medium')
+  const gitData = await axios.get('https://www.davidfernando.tech//api/git')
+  const dataMedium = await axios.get('https://www.davidfernando.tech/api/medium')
 
   const aWeekInSeconds = 604800
 
