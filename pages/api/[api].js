@@ -8,7 +8,12 @@ export default (request, response) => {
     query: { api }
   } = request
 
+  const aWeekInSeconds = 604800
+
   const getGit = async()=>{
+
+    response.setHeader('Cache-Control', `max-age=0, s-maxage=${aWeekInSeconds}, stale-while-revalidate, public`)
+
     const data = await axios.get('https://api.github.com/users/david-fernando/repos')
 
     const repositoryNames = [
@@ -69,6 +74,9 @@ export default (request, response) => {
 
   }
   const getMedium = async()=>{
+
+    response.setHeader('Cache-Control', `max-age=0, s-maxage=${aWeekInSeconds}, stale-while-revalidate, public`)
+
     const data = await axios.get('https://mediumpostsapi.herokuapp.com/?usermedium=davidfernandodamata21')
 
     return response.json(data.data)
