@@ -4,9 +4,11 @@ function useMobileDevice() {
 
   const [isMobileDevice, setIsMobileDevice] = useState(false);
 
+  const minimunWindowSize = 891
+
   useEffect(() => {
 
-    return (window.innerWidth < 891)? setIsMobileDevice(true) : setIsMobileDevice(false)
+    return (window.innerWidth < minimunWindowSize)? setIsMobileDevice(true) : setIsMobileDevice(false)
   }, []);
 
   return {

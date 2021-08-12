@@ -12,7 +12,7 @@
  .main {
   padding: 5rem 0;
   width: 91.4rem;
-  max-width: 100%;
+  max-width: 82%;
   flex: 1;
   padding-top: 73.2rem;
   display: flex;
@@ -25,13 +25,7 @@
   display:flex;
   flex-direction: column;
   max-width: 100%;
-  gap: 6rem
-}
-
-@media (max-width: 890px) {
-  .sliders {
-    max-width: 82%;
-  }
+  gap: 6rem;
 }
 
 @media (max-width: 717px) {
@@ -43,5 +37,11 @@
 @media (max-width: 765px) {
   .main {
     padding-top: 94.3rem
+  }
+}
+
+@media (max-width: 404px) {
+  .main {
+    padding-top: 102.3rem
   }
 }
