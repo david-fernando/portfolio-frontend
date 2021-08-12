@@ -28,12 +28,6 @@
   gap: 6rem
 }
 
-/* @media (max-width: 890px) {
-  .sliders {
-    max-width: 82%;
-  }
-} */
-
 @media (max-width: 717px) {
   .sliders {
     align-items: center;
