@@ -13,7 +13,7 @@ function Skills(){
         <span><SiNodeDotJs size={34} />&nbsp; NodeJS</span>
       </CardSkills>
       <CardSkills>
-        <span><SiTypescript size={34} />&nbsp; TypesScript</span>
+        <span><SiTypescript size={34} />&nbsp; TypeScript</span>
         <span><SiReact size={34} />&nbsp; ReactJS</span>
         <span><SiNextDotJs size={34} />&nbsp; NextJS</span>
         <span><SiElectron size={34} />&nbsp; Electron</span>

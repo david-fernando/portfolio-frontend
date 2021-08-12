@@ -7,19 +7,26 @@ import styles from '../styles/components/Header.module.css'
 
 function Header(){
   return (
-    <div className={styles.headerContainer}>
-      <div className={styles.imageContainer}>
-        <Image src={photo} layout="fill" className={styles.image} alt="David Fernando" />
-      </div>
-      <div className={styles.profile}>
-        <span>David Fernando</span>
-        <span className="title" >Desenvolvedor Frontend</span>
-        <span className={styles.about}>
-          Tenho formação técnica em WebDesign pela Microcamp. Considerado um dos melhores alunos da escola, nunca tirei notas abaixo de oito. Atualmente trabalho em projetos pessoais com React JS e Electron.
+    <header className={styles.headerContainer}>
+      <span>
+        <div className={styles.imageContainer}>
+          <Image src={photo} layout="fill" className={styles.image} alt="David Fernando" />
+        </div>
+        <div className={styles.profile}>
+          <span>David Fernando</span>
+          <span className="title" >Desenvolvedor Frontend</span>
+          <span className={styles.about}>
+            Tenho formação técnica em WebDesign pela Microcamp. Considerado um dos melhores alunos da escola, nunca tirei notas abaixo de oito. Atualmente trabalho em projetos pessoais com React JS e Electron.
+          </span>
+        <span className={styles.mobileLink}>
+          <SocialLink />
         </span>
-        <SocialLink />
-      </div>
-    </div>
+        </div>
+      </span>
+        <div className={styles.desktopLink}>
+          <SocialLink />
+        </div>
+    </header>
   )
 }
 

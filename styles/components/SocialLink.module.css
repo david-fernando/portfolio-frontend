@@ -1,7 +1,7 @@
 .socialLink {
   height: 0px auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 10px;
   margin-top: 4px;
   align-items: baseline;
@@ -9,7 +9,21 @@
 }
 
 .socialLink > a, .icon-link {
-  color: #383a3c
+  color: #383a3c;
+}
+
+.socialLink > a {
+  display: flex;
+  align-items: last baseline;
+  align-self: flex-start;
+  gap: 0.8rem;
+  width: max-content;
+}
+
+@media (max-width: 890px) {
+  .socialLink {
+    flex-direction: row;
+  }
 }
 
 @media (max-width: 765px) {
@@ -23,7 +37,7 @@
 
 @media (max-width: 404px) {
   .socialLink {
-    gap: 7rem;
+    gap: 5rem;
   }
   .socialLink > a > span {
     display: none
