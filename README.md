@@ -1,6 +1,6 @@
 <center>
   <h1>Portfolio frontend</h1>
-  <p>My portfolio My frontend developer portfolio made with NextJS.</p>
+  <p>My frontend developer portfolio made with NextJS.</p>
 </center>
 
 <hr>
