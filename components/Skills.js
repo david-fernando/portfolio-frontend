@@ -4,19 +4,21 @@ import SliderCard from './SliderCard'
 import CardSkills from './CardSkills'
 
 function Skills(){
+  const iconSize = 34
+
   return (
     <SliderCard title="Habilidades">
       <CardSkills>
-        <span><SiHtml5 size={34} />&nbsp; HTML5</span>
-        <span><SiCss3 size={34} />&nbsp; CSS3</span>
-        <span><SiJavascript size={34} />&nbsp; JavaScript</span>
-        <span><SiNodeDotJs size={34} />&nbsp; NodeJS</span>
+        <span><SiHtml5 size={iconSize} />&nbsp; HTML5</span>
+        <span><SiCss3 size={iconSize} />&nbsp; CSS3</span>
+        <span><SiJavascript size={iconSize} />&nbsp; JavaScript</span>
+        <span><SiNodeDotJs size={iconSize} />&nbsp; NodeJS</span>
       </CardSkills>
       <CardSkills>
-        <span><SiTypescript size={34} />&nbsp; TypeScript</span>
-        <span><SiReact size={34} />&nbsp; ReactJS</span>
-        <span><SiNextDotJs size={34} />&nbsp; NextJS</span>
-        <span><SiElectron size={34} />&nbsp; Electron</span>
+        <span><SiTypescript size={iconSize} />&nbsp; TypeScript</span>
+        <span><SiReact size={iconSize} />&nbsp; ReactJS</span>
+        <span><SiNextDotJs size={iconSize} />&nbsp; NextJS</span>
+        <span><SiElectron size={iconSize} />&nbsp; Electron</span>
       </CardSkills>
     </SliderCard>
   )
