@@ -3,7 +3,7 @@ import styles from '../styles/components/Footer.module.css'
 function Footer(){
   return (
     <footer className={styles.footer}>
-      <span>Feito por David Fernando | Desenvolvedor web</span>
+      <span>Designed & built by David Fernando</span>
     </footer>
   )
 }
