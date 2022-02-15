@@ -77,7 +77,7 @@ export default (request, response) => {
 
     response.setHeader('Cache-Control', `max-age=0, s-maxage=${aWeekInSeconds}, stale-while-revalidate, public`)
 
-    const data = await axios.get('https://mediumpostsapi.herokuapp.com/?usermedium=davidfernandodamata21')
+    const data = await axios.get('https://mediumpostapi.herokuapp.com/?usermedium=davidfernandodamata21')
 
     return response.json(data.data)
   }
