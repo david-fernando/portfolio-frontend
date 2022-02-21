@@ -1424,6 +1424,11 @@ get-intrinsic@^1.0.2, get-intrinsic@^1.1.0, get-intrinsic@^1.1.1:
     has "^1.0.3"
     has-symbols "^1.0.1"
 
+get-location-origin@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/get-location-origin/-/get-location-origin-1.0.0.tgz#d2a0d2b465ed6e3501b661c9f94ee93f796410a5"
+  integrity sha1-0qDStGXtbjUBtmHJ+U7pP3lkEKU=
+
 get-orientation@1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/get-orientation/-/get-orientation-1.1.2.tgz#20507928951814f8a91ded0a0e67b29dfab98947"
@@ -1911,6 +1916,11 @@ locate-path@^5.0.0:
   integrity sha512-t7hw9pI+WvuwNJXwk5zVHpyhIqzg2qTlklJOf0mVxGSbe3Fp2VieZcduNYjaLDoy6p9uGpQEGWG87WpMKlNq8g==
   dependencies:
     p-locate "^4.1.0"
+
+location-origin@^1.1.4:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/location-origin/-/location-origin-1.1.4.tgz#c634325933130296264828196bf31d8bc8f212fa"
+  integrity sha1-xjQyWTMTApYmSCgZa/Mdi8jyEvo=
 
 lodash.clonedeep@^4.5.0:
   version "4.5.0"
