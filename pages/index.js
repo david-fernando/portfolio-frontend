@@ -27,7 +27,7 @@ export async function getStaticProps(){
 
   const isDevelopment = (process.env.NODE_ENV === 'development')? true : false
 
-  const host = (isDevelopment)? 'http://localhost:3000/api' : 'https://www.davidfernando.tech/api'
+  const host = (isDevelopment)? 'http://localhost:3000/api' : 'https://portfolio-frontend-taupe.vercel.app'
 
   const gitData = await axios.get(`${host}/git`)
   const dataMedium = await axios.get(`${host}/medium`)
