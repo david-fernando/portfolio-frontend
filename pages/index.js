@@ -1,5 +1,5 @@
 import axios from 'axios'
-import origin from 'get-location-origin'
+import {getGit, getMedium} from '../api/api.js'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import MediumArticles from '../components/MediumArticles'
@@ -26,17 +26,15 @@ export default function Home({ gitData, dataMedium }) {
 
 export async function getStaticProps(){
 
-  const host = `${origin}/api`
-
-  const gitData = await axios.get(`${host}/git`)
-  const dataMedium = await axios.get(`${host}/medium`)
+  const gitData = await getGit()
+  const dataMedium = await getMedium()
 
   const aWeekInSeconds = 604800
 
   return {
     props: {
-      gitData: gitData.data,
-      dataMedium: dataMedium.data.dataMedium
+      gitData: gitData,
+      dataMedium: dataMedium.dataMedium
     },
 
     revalidate: aWeekInSeconds
