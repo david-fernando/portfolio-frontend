@@ -1,5 +1,5 @@
 import axios from 'axios'
-import origin from 'get-location-origin'
+import origin from 'location-origin'
 import {getGit, getMedium} from '../api/api.js'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
