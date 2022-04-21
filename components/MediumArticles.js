@@ -1,8 +1,7 @@
 import Carousel from './Carousel'
 
 function MediumArticles({ dataMedium }){
-  
-  return (
+   return (
     <Carousel title="Artigos no Medium" slides={dataMedium} />
   )
 }
