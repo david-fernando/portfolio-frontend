@@ -32,7 +32,7 @@
   .embla__slide {
     display: flex;
     position: relative;
-    min-width: 29%;
+    min-width: 26rem;
     padding-left: 10px;
   }
   
