@@ -3,9 +3,11 @@ import useEmblaCarousel from "embla-carousel-react";
 import { PrevButton, NextButton } from "./CarouselButtons";
 import Card from './Card'
 
+import useMobileDevice from '../hooks/useMobileDevice'
+
 import styles from '../styles/components/SliderCard.module.css'
 
-function Carousel({ title, slides }){
+function Carousel({ title, slides = [] }){
     const [viewportRef, embla] = useEmblaCarousel({ skipSnaps: false });
     const [prevBtnEnabled, setPrevBtnEnabled] = useState(false);
     const [nextBtnEnabled, setNextBtnEnabled] = useState(false);
@@ -24,6 +26,10 @@ function Carousel({ title, slides }){
       onSelect();
       embla.on("select", onSelect);
     }, [embla, onSelect]);
+
+    const { isMobileDevice } = useMobileDevice()
+
+    const shouldIRenderSlidesButton = (slides.length > 3 || isMobileDevice)? true : false
   
     return (
       <div className={styles.sliderContainer}>
@@ -42,8 +48,14 @@ function Carousel({ title, slides }){
             ))}
             </div>
           </div>
-          <PrevButton onClick={scrollPrev} enabled={prevBtnEnabled} />
-          <NextButton onClick={scrollNext} enabled={nextBtnEnabled} />
+          {
+            shouldIRenderSlidesButton && (
+                <>
+                  <PrevButton onClick={scrollPrev} enabled={prevBtnEnabled} />
+                  <NextButton onClick={scrollNext} enabled={nextBtnEnabled} />
+                </>
+            )
+          }
         </div>
       </div>
     );
