@@ -16,10 +16,10 @@ function Header(){
           <span>David Fernando</span>
           <span className="title" >Desenvolvedor Frontend</span>
           <span className={styles.about}>
-            Tenho formação técnica em WebDesign pela Microcamp. Considerado um dos melhores alunos da escola, nunca tirei notas abaixo de oito. Atualmente trabalho em projetos pessoais com React JS e Electron.
+          Estudei web design na Microcamp. Considerado um dos melhores alunos da escola, nunca tirei notas abaixo de oito. Atualmente trabalhando apenas com projetos pessoais, mas em busca de novos desafios.
           </span>
         <span className={styles.mobileLink}>
-          <SocialLink />
+  /        <SocialLink />
         </span>
         </div>
       </span>
