@@ -63,14 +63,7 @@ const getGit = async()=>{
   }
 
 }
-const getMedium = async()=>{
-
-  const data = await axios.get('https://mediumpostapi.herokuapp.com/?usermedium=davidfernandodamata21')
-
-  return data.data
-}
 
 export {
-  getGit,
-  getMedium
+  getGit
 }
