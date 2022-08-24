@@ -1,18 +1,14 @@
-import SliderCard from './SliderCard'
-import Card from './Card'
+import { Carousel } from 'mediumpostscard'
+
+import styles from '../styles/components/SliderCard.module.css'
 
 function MediumArticles({ dataMedium }){
   
   return (
-    <SliderCard title="Artigos no Medium">
-    {
-      dataMedium.map((item, index)=>(
-        <a key={index} href={item.link} target="_blank" rel="noreferrer" >
-          <Card data={ item }/>
-        </a>
-      ))
-    }
-    </SliderCard>
+    <div className={styles.sliderContainer}>
+      <span className="title">Artigos no Medium</span>
+      <Carousel dataMedium={dataMedium} options={{ssr: true}} />
+    </div>
   )
 }
 
