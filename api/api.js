@@ -7,10 +7,10 @@ const getGit = async()=>{
   const data = await axios.get('https://api.github.com/users/david-fernando/repos')
 
   const repositoryNames = [
-    'Listador_de_arquivos',
-    'KeyboardVideoController',
+    'medium-posts-card',
     'medium-posts-api',
     'noLoopFor',
+    'KeyboardVideoController',
     'react-electron-ts'
   ]
 
@@ -18,24 +18,24 @@ const getGit = async()=>{
 
   const repositorys = [
     {
-      title: specificRepositories[1].name,
-      link: specificRepositories[1].html_url,
-      description: specificRepositories[1].description,
-    }, 
-    {
-      title: specificRepositories[0].name,
-      link: specificRepositories[0].html_url,
-      description: specificRepositories[0].description,
-    }, 
-    {
       title: specificRepositories[2].name,
       link: specificRepositories[2].html_url,
       description: specificRepositories[2].description,
     }, 
     {
+      title: specificRepositories[1].name,
+      link: specificRepositories[1].html_url,
+      description: specificRepositories[1].description,
+    }, 
+    {
       title: specificRepositories[3].name,
       link: specificRepositories[3].html_url,
       description: specificRepositories[3].description,
+    }, 
+    {
+      title: specificRepositories[0].name,
+      link: specificRepositories[0].html_url,
+      description: specificRepositories[0].description,
     }, 
     {
       title: specificRepositories[4].name,
