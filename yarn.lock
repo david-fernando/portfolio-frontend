@@ -6294,10 +6294,10 @@ media-typer@0.3.0:
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
   integrity sha512-dq+qelQ9akHpcOl/gUVRTxVIOkAJ1wR3QAvb4RsVjS8oVoFjDGTc679wJYmUmknUF5HwMLOgb5O+a3KxfWapPQ==
 
-mediumpostscard@^1.0.9:
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/mediumpostscard/-/mediumpostscard-1.0.9.tgz#3299758d1f3e1327fbfbde7275d9e7288d692cf6"
-  integrity sha512-WTetzVOPT6g3m4m3xRco+/62Hgk71rTAUkbuFeuefwr94BceAFzORot5xzyk9KUxrGYzB7eBqAgoN8a04TX3kQ==
+mediumpostscard@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/mediumpostscard/-/mediumpostscard-2.0.0.tgz#33cf979786e2830a4c7b7b4ec461caf8449efb4e"
+  integrity sha512-WD+OnI8lP0dMxDaVsHBdVQBlH5XtaKWvgq+SYo6kPcroDSiaaPEbPczxtLKD8ubpMLwePLGjgCsyeC/jGC4yWA==
   dependencies:
     "@testing-library/jest-dom" "^5.16.4"
     "@testing-library/react" "^13.0.0"
