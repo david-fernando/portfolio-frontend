@@ -1,10 +1,9 @@
 import { getGit } from '../api/api.js'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import MediumArticles from '../components/MediumArticles'
 import Projects from '../components/Projects'
 import Skills from '../components/Skills'
-import { fetchMedium } from 'mediumpostscard'
+import { fetchMedium, Carousel, Label } from 'mediumpostscard'
 
 import styles from '../styles/components/Home.module.css'
 
@@ -15,7 +14,9 @@ export default function Home({ gitData, dataMedium }) {
         <Header />
         <div className={styles.sliders}>
           <Projects gitData={gitData} />
-          <MediumArticles dataMedium={dataMedium} />
+          <Label text="Artigos no Medium">
+            <Carousel options={{ssr: true}} dataMedium={dataMedium} />
+          </Label>
           <Skills />
         </div>
       </div>
