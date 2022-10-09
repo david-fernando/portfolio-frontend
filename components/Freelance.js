@@ -1,19 +1,18 @@
+import SliderCard from "./SliderCard"
+import Card from "./Card"
+
 function Freelance(){
     const item = {
         title: 'J2PISOS',
         description: 'Instalação e manutenção de pisos laminados e pisos vinílicos.' ,
-        image: ''
+        image: '/j2pisos.png'
     }
 
     return (
-        <SliderCard title="Projetos">
-        {
-          gitData.map((item, index)=>(
-            <a key={index} href='https://jdoispisos.com.br/' target="_blank" rel="noreferrer" >
-              <Card data={ item }/>
+        <SliderCard title="Freelance">
+            <a href='https://jdoispisos.com.br/' target="_blank" rel="noreferrer" >
+                <Card data={ item }/>
             </a>
-          ))
-        }
         </SliderCard>
       )
 }
