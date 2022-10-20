@@ -1,5 +1,7 @@
-import SliderCard from "./SliderCard"
+import classnames from "classnames"
 import Card from "./Card"
+
+import styles from '../styles/components/Freelance.module.css'
 
 function Freelance(){
     const item = {
@@ -9,11 +11,12 @@ function Freelance(){
     }
 
     return (
-        <SliderCard title="Freelance">
+        <span className={styles.container}>
+            <span className={classnames(styles.freelanceTitle, 'title')}>Freelance</span>
             <a href='https://jdoispisos.com.br/' target="_blank" rel="noreferrer" >
                 <Card data={ item }/>
             </a>
-        </SliderCard>
+        </span>
       )
 }
 
