@@ -16,7 +16,7 @@ function Header(){
           <span>David Fernando</span>
           <span className="title" >Desenvolvedor Frontend</span>
           <span className={styles.about}>
-          Estudei web design na Microcamp. Atualmente trabalhando somente com projetos pessoais e freelance, mas a procura de uma posição aberta em uma nova empresa ou start-up.
+          Estudei web design na Microcamp. Atualmente trabalhando somente com projetos pessoais e freelance, mas a procura de uma posição em uma nova empresa ou start-up.
           </span>
         <span className={styles.mobileLink}>
           <SocialLink />
