@@ -14,7 +14,7 @@
   width: 91.4rem;
   max-width: 82%;
   flex: 1;
-  padding-top: 73.2rem;
+  padding-top: 106.2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,7 +36,7 @@
 
 @media (max-width: 765px) {
   .main {
-    padding-top: 94.3rem
+    padding-top: 129.1rem;
   }
 }
 
