@@ -54,16 +54,25 @@
   align-self: end;
 }
 
-@media (max-width: 1091px) {
+@media (max-width: 1090px) {
   .imageContainer {
-    height: 14.5rem;
-    width: 14.5rem;
-    min-height: 14.5rem;
-    min-width: 14.5rem;
+    height: 13.6rem;
+    width: 13.6rem;
+    min-height: 13.6rem;
+    min-width: 13.6rem;
   }
 }
 
-@media (max-width: 1091px) {
+@media (max-width: 1004px) {
+  .imageContainer {
+    height: 14.8rem;
+    width: 14.8rem;
+    min-height: 14.8rem;
+    min-width: 14.8rem;
+  }
+}
+
+@media (max-width: 910px) {
   .imageContainer {
     height: 16.5rem;
     width: 16.5rem;
@@ -72,21 +81,12 @@
   }
 }
 
-@media (max-width: 908px) {
-  .imageContainer {
-    height: 18.5rem;
-    width: 18.5rem;
-    min-height: 18.5rem;
-    min-width: 18.5rem;
-  }
-}
-
 @media (max-width: 890px) {
   .imageContainer {
-    height: 16.8rem;
-    width: 16.8rem;
-    min-height: 16.8rem;
-    min-width: 16.8rem;
+    height: 16rem;
+    width: 16rem;
+    min-height: 16rem;
+    min-width: 16rem;
   }
 
   .mobileLink {
@@ -95,15 +95,6 @@
 
   .desktopLink {
     display: none
-  }
-}
-
-@media (max-width: 775px) {
-  .imageContainer {
-    height: 16.8rem;
-    width: 16.8rem;
-    min-height: 18.8rem;
-    min-width: 18.8rem;
   }
 }
 

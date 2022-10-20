@@ -6,6 +6,7 @@ import Skills from '../components/Skills'
 import { fetchMedium, Carousel, Label } from 'mediumpostscard'
 
 import styles from '../styles/components/Home.module.css'
+import Freelance from '../components/Freelance.js'
 
 export default function Home({ gitData, dataMedium }) {
   return (
@@ -17,6 +18,7 @@ export default function Home({ gitData, dataMedium }) {
           <Label text="Artigos no Medium">
             <Carousel options={{ssr: true}} dataMedium={dataMedium} />
           </Label>
+          <Freelance />
           <Skills />
         </div>
       </div>
