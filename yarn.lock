@@ -2402,6 +2402,11 @@
     "@webassemblyjs/ast" "1.11.1"
     "@xtuc/long" "4.2.2"
 
+"@xmldom/xmldom@0.8.3":
+  version "0.8.3"
+  resolved "https://registry.yarnpkg.com/@xmldom/xmldom/-/xmldom-0.8.3.tgz#beaf980612532aa9a3004aff7e428943aeaa0711"
+  integrity sha512-Lv2vySXypg4nfa51LY1nU8yDAGo/5YwF+EY/rUZgIbfvwVARcd67ttCM8SMsTeJy51YhHYavEq+FS6R0hW9PFQ==
+
 "@xtuc/ieee754@^1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@xtuc/ieee754/-/ieee754-1.2.0.tgz#eef014a3145ae477a1cbc00cd1e552336dceb790"
@@ -3148,12 +3153,7 @@ cjs-module-lexer@^1.0.0:
   resolved "https://registry.yarnpkg.com/cjs-module-lexer/-/cjs-module-lexer-1.2.2.tgz#9f84ba3244a512f3a54e5277e8eef4c489864e40"
   integrity sha512-cOU9usZw8/dXIXKtwa8pM0OTJQuJkxMN6w30csNRUerHfeQ5R6U3kkU/FtJeIf3M202OHfY2U8ccInBG7/xogA==
 
-classnames@^2.3.1:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.1.tgz#dfcfa3891e306ec1dad105d0e88f4417b8535e8e"
-  integrity sha512-OlQdbZ7gLfGarSqxesMesDa5uz7KFbID8Kpq/SxIoNGDqY8lSYs0D+hhtBXhcdB3rcbXArFr7vlHheLk1voeNA==
-
-classnames@^2.3.2:
+classnames@^2.3.1, classnames@^2.3.2:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.2.tgz#351d813bf0137fcc6a76a16b88208d2560a0d924"
   integrity sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==
@@ -6297,10 +6297,10 @@ media-typer@0.3.0:
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
   integrity sha512-dq+qelQ9akHpcOl/gUVRTxVIOkAJ1wR3QAvb4RsVjS8oVoFjDGTc679wJYmUmknUF5HwMLOgb5O+a3KxfWapPQ==
 
-mediumpostscard@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/mediumpostscard/-/mediumpostscard-2.0.0.tgz#33cf979786e2830a4c7b7b4ec461caf8449efb4e"
-  integrity sha512-WD+OnI8lP0dMxDaVsHBdVQBlH5XtaKWvgq+SYo6kPcroDSiaaPEbPczxtLKD8ubpMLwePLGjgCsyeC/jGC4yWA==
+mediumpostscard@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/mediumpostscard/-/mediumpostscard-2.0.2.tgz#d36cda3bbe09f2320148611e28a4476ae7abdc07"
+  integrity sha512-Apy9nMVjJwaq5SkSd3NQEUMYIURgzZE3ZIr70Cs0O6KrHuWlO+P7aRmrYxHm8WnrqoN7s9Wsnr1sdPOD+odRmw==
   dependencies:
     "@testing-library/jest-dom" "^5.16.4"
     "@testing-library/react" "^13.0.0"
@@ -6309,6 +6309,7 @@ mediumpostscard@^2.0.0:
     "@types/node" "^18.0.0"
     "@types/react" "^18.0.14"
     "@types/react-dom" "^18.0.5"
+    "@xmldom/xmldom" "0.8.3"
     axios "^0.27.2"
     classnames "^2.3.1"
     glob-parent "5.1.2"
