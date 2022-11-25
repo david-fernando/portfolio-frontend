@@ -20,7 +20,7 @@
     "react-multi-carousel": "^2.8.2"
   },
   "devDependencies": {
-    "eslint": "8.26.0",
+    "eslint": "8.28.0",
     "eslint-config-next": "12.3.1"
   }
 }
