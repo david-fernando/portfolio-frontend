@@ -15,9 +15,9 @@ const getGit = async()=>{
     'react-electron-ts'
   ]
 
-  const isDevelopment = (process.env.NODE_ENV === 'development')? true : false
+  const isProduction = (process.env.NODE_ENV === 'production')? true : false
 
-  const host = (isDevelopment)? 'http://localhost:3000/api' : 'https://davidfernando.vercel.app/api'
+  const host = (isProduction)? 'https://davidfernando.vercel.app/api' : 'http://localhost:3000/api'
 
   const specificRepositories = returnSpecificRepositories(repositoryNames, data.data)
 
