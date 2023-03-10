@@ -1,5 +1,6 @@
 /* eslint-disable import/no-anonymous-default-export */
 import axios from 'axios'
+import os from 'os'
 import returnSpecificRepositories from '../utils/returnSpecificRepositories'
 
 const getGit = async()=>{
@@ -49,7 +50,7 @@ const getGit = async()=>{
 
     for(let index = 0; index < repositoryNames.length; index++){
 
-      const data = await axios.get(`https://davidfernando.vercel.app/api/git?githubuser=david-fernando&repository=${repositoryNames[index]}`)
+      const data = await axios.get(`http://localhost:3000/api/git?githubuser=david-fernando&repository=${repositoryNames[index]}`)
 
       image = data.data.imageUrl
       
