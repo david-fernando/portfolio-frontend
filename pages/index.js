@@ -1,4 +1,4 @@
-import { getGit } from '../api/api.js'
+import { getGit } from '../utils/gitData'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Projects from '../components/Projects'
