@@ -15,6 +15,10 @@ const getGit = async()=>{
     'react-electron-ts'
   ]
 
+  const isDevelopment = (process.env.NODE_ENV === 'development')? true : false
+
+  const host = (isDevelopment)? 'http://localhost:3000/api' : 'https://davidfernando.vercel.app/api'
+
   const specificRepositories = returnSpecificRepositories(repositoryNames, data.data)
 
   const repositorys = [
@@ -50,7 +54,7 @@ const getGit = async()=>{
 
     for(let index = 0; index < repositoryNames.length; index++){
 
-      const data = await axios.get(`http://localhost:3000/api/git?githubuser=david-fernando&repository=${repositoryNames[index]}`)
+      const data = await axios.get(`${host}/git?githubuser=david-fernando&repository=${repositoryNames[index]}`)
 
       image = data.data.imageUrl
       
