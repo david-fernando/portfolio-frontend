@@ -1,11 +1,13 @@
 /* eslint-disable import/no-anonymous-default-export */
 import axios from 'axios'
-import os from 'os'
+import operacionalSystem from 'os'
 import returnSpecificRepositories from '../utils/returnSpecificRepositories'
 
 const getGit = async()=>{
 
   const data = await axios.get('https://api.github.com/users/david-fernando/repos')
+
+  const hostname = operacionalSystem.hostname()
 
   const repositoryNames = [
     'medium-posts-card',
@@ -15,9 +17,9 @@ const getGit = async()=>{
     'react-electron-ts'
   ]
 
-  const isProduction = (process.env.NODE_ENV === 'production')? true : false
+  const isDevelopment = (process.env.NODE_ENV === 'development')? true : false
 
-  const host = (isProduction)? 'https://davidfernando.vercel.app/api' : 'http://localhost:3000/api'
+  const host = (isDevelopment)? 'http://localhost:3000/api' : `https://${hostname}.vercel.app/api`
 
   const specificRepositories = returnSpecificRepositories(repositoryNames, data.data)
 
