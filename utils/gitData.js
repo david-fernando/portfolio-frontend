@@ -19,7 +19,7 @@ const getGit = async()=>{
 
   const isDevelopment = (process.env.NODE_ENV === 'development')? true : false
 
-  const host = (isDevelopment)? 'http://localhost:3000/api' : `https://${hostname}.vercel.app/api`
+  const host = (isDevelopment)? 'http://localhost:3000/api' : `https://${hostname}/api`
 
   const specificRepositories = returnSpecificRepositories(repositoryNames, data.data)
 
